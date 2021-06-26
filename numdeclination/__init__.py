@@ -11,9 +11,9 @@ class NumDeclination:
         if not isinstance(number, (int, float)) or isinstance(number, bool):
             raise ValueError('Указанное вами число не является int или float.')
 
-        number2 = int(number)
         
-        string = str(number2)
+        
+        string = str(int(number))
         last_digits = string[-2:]
 
         cases_dict = {
